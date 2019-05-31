@@ -15,7 +15,7 @@ public:
 	Student(const int age, const std::string &name, const std::string &surname, const std::string &gender, const std::string &city);
 	Student(const Student &student);
 
-	void operator=(const Student &student);
+	Student& operator=(const Student &student);
 
 	friend std::ostream& operator<<(std::ostream &out, const Student &student) ;
 

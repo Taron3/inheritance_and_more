@@ -5,7 +5,7 @@ const double PI = 3.14159265359;
 
 const Point& Circle::getCenter() const
 {
-	return getPoint(); 
+	return m_point; 
 }
 
 double Circle::perimeter() const

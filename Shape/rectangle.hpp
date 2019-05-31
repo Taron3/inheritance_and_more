@@ -16,8 +16,6 @@ public:
 	double width() const;
 	double height() const;
 
-	//const Point& topLeft() const;
-	//const Point& bottomRight() const;
 	double perimeter() const;
 	double area() const;
 

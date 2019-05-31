@@ -17,6 +17,8 @@ int main()
 	Student st2(age, name, surname, gender, city); 
 	std::cout << st2 << std::endl; 
 	
-	Student st3(st2);
+	Student st3;
+	st3 = st2; 
 	std::cout << st3;
+	
 }

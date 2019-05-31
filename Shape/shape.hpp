@@ -11,11 +11,10 @@ public:
 	: m_point(p)
 	{}
 
-	const Point& getPoint() const { return m_point; }
 	double perimeter() const {};
 	double area() const {} ;
 
-private:
+protected:
 	Point m_point;
 };
 

@@ -4,12 +4,12 @@
 
 double Rectangle::width() const
 {
-	return std::abs(std::abs(m_bottomRight.X()) - std::abs(getPoint().X()) );
+	return std::abs(std::abs(m_bottomRight.X()) - std::abs(m_point.X()) );
 }
 
 double Rectangle::height() const 
 {
-	return std::abs(std::abs(m_bottomRight.Y()) - std::abs(getPoint().Y()) );
+	return std::abs(std::abs(m_bottomRight.Y()) - std::abs(m_point.Y()) );
 }
 
 double Rectangle::perimeter() const 

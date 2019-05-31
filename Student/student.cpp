@@ -22,13 +22,19 @@ Student::Student(const Student &student)
     m_city = student.m_city;
 }
 
-void Student::operator=(const Student &student)
+Student& Student::operator=(const Student &student)
 {	
+	if(this == &student)
+	{
+		return *this;
+	}
+
 	m_age = student.m_age;
 	m_name = student.m_name;
     m_surname = student.m_surname;
     m_gender = student.m_gender;
     m_city = student.m_city;
+	return *this;
 }
 
 std::ostream& operator<<(std::ostream& out, const Student &student) 
